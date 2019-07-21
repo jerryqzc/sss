@@ -7,7 +7,7 @@
 		<title>三翼工作室招募令</title>
 	</head>
 
-	<body <!--onload="getInsideArr()"-->>
+	<body onload="getInsideArr()">
 		<div id="box" style="height: window.innerHeight;min-height: window.innerHeight;">
 			<div class="sun">
 				<img src="img/sun.png" width="100%" />
@@ -112,12 +112,14 @@
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript">
-			function getInsideArr(){
-var w=window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-var h=window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-document.getElementById("box").style.width=w+"px";
-document.getElementById("box").style.height=h+"px";
-};
+			function getInsideArr() {
+				var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+				var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+				document.getElementById("box").style.width = w + "px";
+				document.getElementById("box").style.height = h + "px";
+			};
+			var element = document.getElementById("box");
+			element.scrollIntoView(true)
 		</script>
 	</body>
 
