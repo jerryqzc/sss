@@ -60,6 +60,7 @@ body:before {
 	font-size: 63px;
 	text-align: center;
 	font-family: create;
+	color: #333333;
 }
 
 .faReform {
@@ -253,12 +254,12 @@ select:invalid {
 #cardPart {}
 
 #cPutText {
-	width: 50%;
+	width: 55%;
 	text-align: center;
 }
 
 #cardID {
-	width: 50%;
+	width: 45%;
 }
 
 #sign {
