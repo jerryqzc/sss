@@ -32,7 +32,7 @@ body:before {
 }
 
 @font-face {
-	font-family: 'sub';
+	font-family: 'createe';
 	src: url(../fonts/sub.ttf);
 }
 
@@ -92,7 +92,7 @@ body:before {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	font-family: create;
+	font-family: createe;
 }
 
 #repeat,
@@ -140,7 +140,7 @@ body:before {
 #yuan {
 	padding-left: 4%;
 	border-radius: 50px;
-	font-family: sub;
+	font-family: createe;
 }
 
 .sexRadio {
@@ -185,7 +185,7 @@ body:before {
 	border-radius: 30px;
 	padding-left: 4%;
 	background-color: white;
-	font-family: sub;
+	font-family: createe;
 	border: 0px;
 	outline: none;
 }
@@ -237,7 +237,7 @@ select:invalid {
 	font-size: 35px;
 	padding-left: 20px;
 	padding-top: 20px;
-	font-family: sub;
+	font-family: createe;
 	border: 0px;
 	outline: none;
 }
