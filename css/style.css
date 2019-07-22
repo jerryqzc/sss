@@ -1,75 +1,104 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
-body{
-   background:url(../img/background.png)  no-repeat center center;
-   background-size:cover;
-   background-attachment:fixed;
-   background-color:#CCCCCC;
-}
-body:before {	
-	content: "";	
-	background: url(../img/background.png) no-repeat center center;	
-	background-size: 121%;	
-	position: fixed;	
-	top: 0;	
-	left: 0;	
-	bottom: 0;	
-	right: 0;	
-	z-index: -2;}
 
-.sun{
+html {
+	/*font-family: MFLiHei_Noncommercial-Regular;*/
+}
+
+body {
+	background: url(../img/bg.png) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #CCCCCC;
+}
+
+body:before {
+	content: "";
+	background: url(../img/bg.png) no-repeat center center;
+	background-size: 122%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -2;
+}
+
+@font-face {
+	font-family: 'create';
+	src: url(../fonts/create.otf);
+}
+
+@font-face {
+	font-family: 'sub';
+	src: url(../fonts/sub.ttf);
+}
+
+.sun {
 	width: 20%;
 	position: absolute;
 	top: 11vh;
 	right: 5%;
 	z-index: -2;
 }
-.sunShadow{
+
+.sunShadow {
 	width: 20%;
 	position: absolute;
 	bottom: 10%;
 	right: 5%;
 	z-index: -2;
 }
-.title{
+
+.title {
 	width: 100%;
-	height: 28vw;
+	height: 200px;
 	position: absolute;
-	line-height: 28vw;
+	line-height: 200px;
 	font-size: 63px;
 	text-align: center;
+	font-family: create;
 }
-.faReform{
+
+.faReform {
 	width: 100%;
 	position: absolute;
-	margin-top: 28vw;
+	margin-top: 200px;
 }
-.reformbg{
+
+.reformbg {
 	width: 70%;
 	height: 1500px;
 	position: absolute;
 	margin-left: 15%;
 	z-index: -1;
-	filter:alpha(Opacity=30);
-	-moz-opacity:0.3;
+	filter: alpha(Opacity=30);
+	-moz-opacity: 0.3;
 	opacity: 0.3;
 	opacity: 30%;
 	background-color: #1c3554;
 	border-radius: 50px;
 }
-.reform{
+
+.reform {
 	width: 70%;
-	height: 1400px;
+	height: 1472px;
 	position: absolute;
 	margin-left: 15%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	font-family: sub;
 }
-#repeat,#repeatMd1,#repeatMd2,#repeatMd3{
+
+#repeat,
+#cardPart,
+#repeatMd1,
+#repeatMd2,
+#repeatMd3 {
 	width: 80%;
 	height: 4%;
 	/*position: absolute;
@@ -79,46 +108,72 @@ body:before {
 	font-size: 38px;
 	color: white;
 }
-#putText,#putSex{
+
+#putText,
+#putSex,
+#cPutText {
 	width: 20%;
 	float: left;
 }
-#name,#sex,#tel,#qq,#yuan,#class{
+
+#name,
+#sex,
+#tel,
+#qq,
+#yuan,
+#class,
+#cardID {
 	width: 78%;
 	height: 50px;
 	float: left;
 	background-color: white;
-	border-radius: 18px;
+	border-radius: 50px;
 	border: none;
 	font-size: 33px;
 	text-align: center;
 	color: black;
+	border: 0px;
+	outline: none;
 }
-#yuan{
+
+#yuan {
 	padding-left: 4%;
+	border-radius: 50px;
+	font-family: sub;
 }
-.sexRadio{
+
+.sexRadio {
 	width: 40%;
 	height: 50px;
 	float: left;
 }
-#sex{
+
+#sex {
 	width: 35%;
 	margin-left: 20%;
 	background-color: green;
 }
-#yuan{
+
+#yuan {
 	color: grey;
 	text-align: center;
 }
-#repeatMd1,#repeatMd2,#repeatMd3{
+
+#repeatMd1,
+#repeatMd2,
+#repeatMd3 {
 	height: 6%;
 	margin-top: 50px;
 }
-#repeatMd2,#repeatMd3{
+
+#repeatMd2,
+#repeatMd3 {
 	margin-top: 30px;
 }
-#md1,#md2,#md3{
+
+#md1,
+#md2,
+#md3 {
 	width: 64%;
 	height: 100%;
 	margin-left: 19%;
@@ -129,51 +184,106 @@ body:before {
 	border-radius: 30px;
 	padding-left: 4%;
 	background-color: white;
+	font-family: sub;
+	border: 0px;
+	outline: none;
 }
-input::-webkit-input-placeholder{
+
+input::-webkit-input-placeholder {
 	text-align: center;
 }
-input::-ms-input-placeholder{
+
+input::-ms-input-placeholder {
 	text-align: center;
 }
-input::-moz-placeholder{
+
+input::-moz-placeholder {
 	text-align: center;
 }
-#intro{
+
+select {
+	/*border: solid 1px #000;*/
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	padding-right: 40px;
+	background: url(../img/tri.png) no-repeat scroll right center transparent;
+	background-position-x: 97%;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+select:invalid {
+	color: red;
+	/*	text-align: center;*/
+}
+
+#intro {
 	width: 100%;
 	height: 14%;
 	margin-top: 30px;
 }
-#trod{
+
+#trod {
 	width: 80%;
 	height: 100%;
-	margin-left: 10%;
+	margin-left: 9%;
 	background-color: white;
 	border: none;
 	border-radius: 30px;
 	font-size: 35px;
 	padding-left: 20px;
 	padding-top: 20px;
+	font-family: sub;
+	border: 0px;
+	outline: none;
 }
-#sign{
+
+#cardTip {
+	width: 100%;
+	height: 50px;
+	margin-top: 38px;
+	text-align: center;
+	font-size: 22px;
+	color: white;
+}
+
+#cardPart {}
+
+#cPutText {
+	width: 50%;
+	text-align: center;
+}
+
+#cardID {
+	width: 50%;
+}
+
+#sign {
 	width: 35%;
 	height: 100px;
 	margin-left: 32.5%;
 	position: relative;
 	margin-top: 1600px;
 	border: none;
-	background-color: #feb6b7;
+	background-color: #ef9cb1;
 	font-size: 50px;
-	border-radius: 30px;
-	box-shadow: 0px 7px 25px grey;
+	border-radius: 50px;
+	box-shadow: 0px 7px 25px #4c6186;
+	font-family: sub;
+	color: white;
 }
-#blank{
+
+#blank {
 	width: 100%;
 	height: 50px;
 }
 
 
 /*radio变色*/
+
 .sexRadio {
 	position: relative;
 }
@@ -224,6 +334,7 @@ input::-moz-placeholder{
 .sexRadio .radio input:checked+i:after {
 	opacity: 1;
 }
+
 
 /*.sexRadio2 {
 	position: relative;
